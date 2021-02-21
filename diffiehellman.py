@@ -1,0 +1,8 @@
+g = int(input("g: "))
+n = int(input("n: "))
+x = int(input("A chooses x: "))
+print(f"1: A → ({n},{g},{pow(g,x,n)}) → B")
+y = int(input("B chooses y: "))
+print(f"2: B → ({pow(g,y,n)}) → A")
+k = pow(g,x*y,n)
+print(f"k = {k}")
