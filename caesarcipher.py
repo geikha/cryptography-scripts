@@ -30,7 +30,7 @@ while 1 <= option <= 2:
 
     if option == 1:
         text = input("Text to cipher:\n").strip()
-        key = input("Key: ").strip(); key = key_word_to_list(key)
+        key = input("Key: ").strip(); key = key_word_to_list(key) if key.isalpha() else [int(key)]
         ciphered_text = cipher(text,key)
         print(ciphered_text)
         input("Press Enter to continue:")
